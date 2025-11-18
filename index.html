@@ -1,5 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      text-align: center;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Simple Website</h1>
+  </header>
 
-<h1This is a test page></h1>
+  <p>Click the button below to display a message:</p>
+  <button onclick="showMessage()">Click Me</button>
+
+  <p id="message"></p>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').innerText = 'Hello! Thanks for visiting!';
+    }
+  </script>
+</body>
 </html>
-
